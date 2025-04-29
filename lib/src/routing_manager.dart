@@ -5,7 +5,6 @@ import 'package:osrm_routing_client/src/models/math_utils.dart';
 import 'package:osrm_routing_client/src/models/request_helper.dart';
 import 'package:osrm_routing_client/src/models/route.dart';
 import 'package:osrm_routing_client/src/routes_services/osrm_service.dart';
-import 'package:osrm_routing_client/src/routes_services/valhalla_service.dart';
 
 import 'package:osrm_routing_client/src/models/lng_lat.dart';
 import 'package:osrm_routing_client/src/utilities/utils.dart';
@@ -34,17 +33,11 @@ class RoutingManagerConfiguration {
 class RoutingManager {
   final RoutingManagerConfiguration configuration;
   final OSRMRoutingService _osrmService;
-  final ValhallaRoutingService _valhallaRoutingService;
   RoutingManager({this.configuration = const RoutingManagerConfiguration()})
     : _osrmService = OSRMRoutingService.dioClient(
         client:
             configuration.osrmServerDioClient ??
             Dio(BaseOptions(baseUrl: oSRMServer)),
-      ),
-      _valhallaRoutingService = ValhallaRoutingService.dioClient(
-        client:
-            configuration.valhallaServerDioClient ??
-            Dio(BaseOptions(baseUrl: osmValhallaServer)),
       );
 
   /// [getRoute]
@@ -68,7 +61,6 @@ class RoutingManager {
   ///
   Future<Route> getRoute({required BaseRequest request}) => switch (request) {
     OSRMRequest _ => _osrmService.getOSRMRoad(request),
-    ValhallaRequest _ => _valhallaRoutingService.getValhallaRoad(request),
     _ => Future.value(const Route.empty()),
   };
 
@@ -341,5 +333,4 @@ extension RoadManagerUtils on RoutingManager {
 
 extension PrvRoutingManager on RoutingManager {
   OSRMRoutingService get osrmClient => _osrmService;
-  ValhallaRoutingService get valhallaClient => _valhallaRoutingService;
 }
