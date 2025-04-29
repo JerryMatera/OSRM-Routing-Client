@@ -1,4 +1,4 @@
-library orsm_dart;
+library osrm_routing_client;
 
 export 'src/routing_manager.dart' hide RoadManagerUtils;
 export 'src/models/lng_lat.dart' hide PrvExtLngLat;

@@ -1,8 +1,8 @@
 import 'dart:convert';
-import 'package:routing_client_dart/routing_client_dart.dart';
-import 'package:routing_client_dart/src/models/osrm/road.dart';
-import 'package:routing_client_dart/src/models/osrm/road_helper.dart';
-import 'package:routing_client_dart/src/models/translation.dart';
+import 'package:osrm_routing_client/routing_client_dart.dart';
+import 'package:osrm_routing_client/src/models/osrm/road.dart';
+import 'package:osrm_routing_client/src/models/osrm/road_helper.dart';
+import 'package:osrm_routing_client/src/models/translation.dart';
 
 /// [OSRMHelper]
 ///

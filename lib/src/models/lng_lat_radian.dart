@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:routing_client_dart/routing_client_dart.dart';
+import 'package:osrm_routing_client/routing_client_dart.dart';
 
 typedef LocationRadians = double;
 

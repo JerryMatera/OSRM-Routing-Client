@@ -1,6 +1,6 @@
-import 'package:routing_client_dart/src/models/route.dart';
-import 'package:routing_client_dart/src/models/valhalla/extensions.dart';
-import 'package:routing_client_dart/src/utilities/valhalla_utilities.dart';
+import 'package:osrm_routing_client/src/models/route.dart';
+import 'package:osrm_routing_client/src/models/valhalla/extensions.dart';
+import 'package:osrm_routing_client/src/utilities/valhalla_utilities.dart';
 
 class ValhallaResponse {
   final Trip trip;

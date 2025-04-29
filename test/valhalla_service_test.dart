@@ -1,9 +1,9 @@
 import 'package:test/test.dart';
 import 'package:http_mock_adapter/http_mock_adapter.dart';
-import 'package:routing_client_dart/routing_client_dart.dart';
-import 'package:routing_client_dart/src/models/valhalla/costing.dart';
-import 'package:routing_client_dart/src/models/valhalla/costing_option.dart';
-import 'package:routing_client_dart/src/utilities/valhalla_utilities.dart';
+import 'package:osrm_routing_client/routing_client_dart.dart';
+import 'package:osrm_routing_client/src/models/valhalla/costing.dart';
+import 'package:osrm_routing_client/src/models/valhalla/costing_option.dart';
+import 'package:osrm_routing_client/src/utilities/valhalla_utilities.dart';
 
 void main() {
   final service = ValhallaRoutingService();

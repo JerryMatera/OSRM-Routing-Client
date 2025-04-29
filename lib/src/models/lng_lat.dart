@@ -1,6 +1,6 @@
-import 'package:routing_client_dart/src/models/lng_lat_radian.dart';
-import 'package:routing_client_dart/src/models/math_utils.dart';
-import 'package:routing_client_dart/src/utilities/utils.dart';
+import 'package:osrm_routing_client/src/models/lng_lat_radian.dart';
+import 'package:osrm_routing_client/src/models/math_utils.dart';
+import 'package:osrm_routing_client/src/utilities/utils.dart';
 
 /// [LngLat] representative class  of geographic point for longitude and latitude
 ///

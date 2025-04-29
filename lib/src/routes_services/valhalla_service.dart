@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:routing_client_dart/src/models/request_helper.dart';
-import 'package:routing_client_dart/src/models/route.dart';
-import 'package:routing_client_dart/src/models/valhalla/valhalla_response.dart';
-import 'package:routing_client_dart/src/routes_services/routing_service.dart';
-import 'package:routing_client_dart/src/utilities/utils.dart';
+import 'package:osrm_routing_client/src/models/request_helper.dart';
+import 'package:osrm_routing_client/src/models/route.dart';
+import 'package:osrm_routing_client/src/models/valhalla/valhalla_response.dart';
+import 'package:osrm_routing_client/src/routes_services/routing_service.dart';
+import 'package:osrm_routing_client/src/utilities/utils.dart';
 
 class ValhallaRoutingService extends RoutingService {
   ValhallaRoutingService({String? valhallaServer, super.header})

@@ -1,4 +1,4 @@
-import 'package:routing_client_dart/src/models/lng_lat.dart';
+import 'package:osrm_routing_client/src/models/lng_lat.dart';
 
 class RoadStep {
   final String name;

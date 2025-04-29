@@ -1,13 +1,13 @@
 import 'package:http_mock_adapter/http_mock_adapter.dart';
-import 'package:routing_client_dart/src/models/lng_lat.dart';
-import 'package:routing_client_dart/src/models/osrm/osrm_mixin.dart';
-import 'package:routing_client_dart/src/models/osrm/road.dart';
-import 'package:routing_client_dart/src/models/osrm/road_helper.dart';
-import 'package:routing_client_dart/src/models/request_helper.dart';
-import 'package:routing_client_dart/src/routes_services/osrm_service.dart';
-import 'package:routing_client_dart/src/routing_manager.dart';
-import 'package:routing_client_dart/src/utilities/computes_utilities.dart';
-import 'package:routing_client_dart/src/utilities/utils.dart';
+import 'package:osrm_routing_client/src/models/lng_lat.dart';
+import 'package:osrm_routing_client/src/models/osrm/osrm_mixin.dart';
+import 'package:osrm_routing_client/src/models/osrm/road.dart';
+import 'package:osrm_routing_client/src/models/osrm/road_helper.dart';
+import 'package:osrm_routing_client/src/models/request_helper.dart';
+import 'package:osrm_routing_client/src/routes_services/osrm_service.dart';
+import 'package:osrm_routing_client/src/routing_manager.dart';
+import 'package:osrm_routing_client/src/utilities/computes_utilities.dart';
+import 'package:osrm_routing_client/src/utilities/utils.dart';
 import 'package:test/test.dart';
 
 import 'response_data_osrm.dart';

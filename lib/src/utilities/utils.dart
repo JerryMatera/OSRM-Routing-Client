@@ -1,9 +1,9 @@
 import 'dart:math' as math;
 import 'dart:convert' show ascii;
-import 'package:routing_client_dart/src/models/lng_lat.dart';
-import 'package:routing_client_dart/src/models/osrm/road.dart';
-import 'package:routing_client_dart/src/models/route.dart';
-import 'package:routing_client_dart/src/utilities/computes_utilities.dart';
+import 'package:osrm_routing_client/src/models/lng_lat.dart';
+import 'package:osrm_routing_client/src/models/osrm/road.dart';
+import 'package:osrm_routing_client/src/models/route.dart';
+import 'package:osrm_routing_client/src/utilities/computes_utilities.dart';
 import 'package:fixnum/fixnum.dart';
 
 const String oSRMServer = "https://routing.openstreetmap.de";

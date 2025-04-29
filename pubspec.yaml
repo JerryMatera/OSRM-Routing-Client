@@ -1,4 +1,4 @@
-name: routing_client_dart
+name: osrm_routing_client
 description: Dart Package for Routing Client Api ( support OSRM/Valhalla project )
 version: 1.0.7
 topics:
@@ -6,20 +6,15 @@ topics:
   - routing
   - osrm
   - valhalla
-homepage: https://github.com/liodali/OSM-Routing-Client-Dart
+homepage: https://github.com/Jerrymatera/OSM-Routing-Client-Dart
 
 environment:
   sdk: ">=3.7.0 <4.0.0"
 
 dependencies:
-  # flutter:
-  #   sdk: flutter
   dio: '>=5.6.0'
   fixnum: ^1.1.0
 dev_dependencies:
-  # flutter_test:
-  #   sdk: flutter
-  # flutter_lints: ^3.0.1
   lints: any
   test: ^1.5.1
   http_mock_adapter: ^0.6.1

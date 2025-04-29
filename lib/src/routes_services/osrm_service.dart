@@ -1,9 +1,9 @@
-import 'package:routing_client_dart/src/models/osrm/osrm_mixin.dart';
-import 'package:routing_client_dart/src/models/request_helper.dart';
-import 'package:routing_client_dart/src/models/osrm/road.dart';
-import 'package:routing_client_dart/src/routes_services/routing_service.dart';
-import 'package:routing_client_dart/src/utilities/computes_utilities.dart';
-import 'package:routing_client_dart/src/utilities/utils.dart';
+import 'package:osrm_routing_client/src/models/osrm/osrm_mixin.dart';
+import 'package:osrm_routing_client/src/models/request_helper.dart';
+import 'package:osrm_routing_client/src/models/osrm/road.dart';
+import 'package:osrm_routing_client/src/routes_services/routing_service.dart';
+import 'package:osrm_routing_client/src/utilities/computes_utilities.dart';
+import 'package:osrm_routing_client/src/utilities/utils.dart';
 
 class OSRMRoutingService extends RoutingService with OSRMHelper {
   OSRMRoutingService({String? serverURL, super.header})

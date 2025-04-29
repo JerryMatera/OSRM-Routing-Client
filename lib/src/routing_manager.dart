@@ -1,14 +1,14 @@
 import 'dart:math';
 import 'package:dio/dio.dart';
-import 'package:routing_client_dart/src/models/lng_lat_radian.dart';
-import 'package:routing_client_dart/src/models/math_utils.dart';
-import 'package:routing_client_dart/src/models/request_helper.dart';
-import 'package:routing_client_dart/src/models/route.dart';
-import 'package:routing_client_dart/src/routes_services/osrm_service.dart';
-import 'package:routing_client_dart/src/routes_services/valhalla_service.dart';
+import 'package:osrm_routing_client/src/models/lng_lat_radian.dart';
+import 'package:osrm_routing_client/src/models/math_utils.dart';
+import 'package:osrm_routing_client/src/models/request_helper.dart';
+import 'package:osrm_routing_client/src/models/route.dart';
+import 'package:osrm_routing_client/src/routes_services/osrm_service.dart';
+import 'package:osrm_routing_client/src/routes_services/valhalla_service.dart';
 
-import 'package:routing_client_dart/src/models/lng_lat.dart';
-import 'package:routing_client_dart/src/utilities/utils.dart';
+import 'package:osrm_routing_client/src/models/lng_lat.dart';
+import 'package:osrm_routing_client/src/utilities/utils.dart';
 
 class RoutingManagerConfiguration {
   final Dio? osrmServerDioClient;
