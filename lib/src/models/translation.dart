@@ -125,7 +125,7 @@ const translation = '''
                 "exit": "Turn {modifier} onto {way_name}"
             },
             "straight": {
-                "default": "Continue straight",
+                "default": "Continue straight on {way_name} for {distance}",
                 "name": "Continue straight to stay on {way_name}",
                 "destination": "Continue towards {destination}",
                 "distance": "Continue straight for {distance}",

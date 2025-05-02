@@ -54,32 +54,14 @@ class RouteInstruction {
   final double duration;
   final String instruction;
   final LngLat location;
+  final String? maneuverModifier;
 
   const RouteInstruction({
     required this.distance,
     required this.duration,
     required this.instruction,
     required this.location,
-  });
-
-  @override
-  String toString() {
-    return "$instruction at $location";
-  }
-}
-
-class ValhallaRouteInstruction extends RouteInstruction {
-  final String? verbalPreinstruction;
-  final String? verbalPostinstruction;
-  final LngLat endInstructionLocation;
-  const ValhallaRouteInstruction({
-    required super.distance,
-    required super.duration,
-    required super.instruction,
-    required super.location,
-    required this.endInstructionLocation,
-    this.verbalPreinstruction,
-    this.verbalPostinstruction,
+    this.maneuverModifier,
   });
 
   @override

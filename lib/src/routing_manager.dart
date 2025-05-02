@@ -11,11 +11,9 @@ import 'package:osrm_routing_client/src/utilities/utils.dart';
 
 class RoutingManagerConfiguration {
   final Dio? osrmServerDioClient;
-  final Dio? valhallaServerDioClient;
 
   const RoutingManagerConfiguration({
     this.osrmServerDioClient,
-    this.valhallaServerDioClient,
   });
 }
 

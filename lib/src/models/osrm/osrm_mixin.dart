@@ -48,6 +48,7 @@ mixin OSRMHelper {
           duration: step.duration,
           instruction: instruction,
           location: step.maneuver.location,
+          maneuverModifier: step.maneuver.modifier,
         );
         instructions.add(roadInstruction);
       }
